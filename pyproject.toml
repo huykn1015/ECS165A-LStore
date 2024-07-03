@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ecs165a"
+version = "0.1.0"
+description = "ECS165A team project (team 13)"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+colorama = "^0.4.6"
+bitarray = "^2.9.2"
+sortedcontainers = "^2.4.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+extend-exclude = '''
+(
+.*tester.*.py
+| __main__.py
+)
+'''
